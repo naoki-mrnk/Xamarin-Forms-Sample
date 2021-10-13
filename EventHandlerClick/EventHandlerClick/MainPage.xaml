@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EventHandlerClick.MainPage"
+             Visual="Material">
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Xamarin Sample" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <StackLayout Margin="0, 20">
+        <Label x:Name="label"
+               Text="Welcome to Xamarin.forms!"
+               HorizontalOptions="Center"/>
+        <Button x:Name="buttonText"
+                Text="Click"
+                Clicked="buttonText_Clicked" />
+        <Label x:Name="labelNextPage"
+               Text="To Next Page"
+               HorizontalOptions="Center" />
+        <Button x:Name="buttonNext"
+                Text="Click"
+                Clicked="buttonText_Clicked" />
+    </StackLayout>
+</ContentPage>
