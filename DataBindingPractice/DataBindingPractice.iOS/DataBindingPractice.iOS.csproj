@@ -5,13 +5,13 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{D6F56BC2-9C96-4BB2-93F8-98355901B73F}</ProjectGuid>
+    <ProjectGuid>{D15385A2-7259-47B4-88F1-32FBA890A676}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ReserveClassroom.iOS</RootNamespace>
+    <RootNamespace>DataBindingPractice.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>ReserveClassroom.iOS</AssemblyName>
+    <AssemblyName>DataBindingPractice.iOS</AssemblyName>
     <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
     <ProvisioningType>automatic</ProvisioningType>
@@ -125,15 +125,12 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
-    <PackageReference Include="Xamarin.Forms.Visual.Material">
-      <Version>5.0.0.2125</Version>
-    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\ReserveClassroom\ReserveClassroom.csproj">
-      <Project>{BE098A17-99EE-43CE-8034-BDADAC066D29}</Project>
-      <Name>ReserveClassroom</Name>
+    <ProjectReference Include="..\DataBindingPractice\DataBindingPractice.csproj">
+      <Project>{6FB5BCF0-E826-4D4A-A584-C2E083CBEF6E}</Project>
+      <Name>DataBindingPractice</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

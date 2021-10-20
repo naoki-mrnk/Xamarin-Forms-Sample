@@ -6,13 +6,16 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace ReserveClassroom
+namespace DataBindingPractice
 {
     public partial class MainPage : ContentPage
     {
+        public string AnyText { get; set; }
         public MainPage()
         {
             InitializeComponent();
+            this.AnyText = "Study DataBinding!";
+            this.BindingContext = this;
         }
     }
 }

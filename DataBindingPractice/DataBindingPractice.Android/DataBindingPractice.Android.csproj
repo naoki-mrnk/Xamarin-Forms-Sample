@@ -3,12 +3,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{316DC2DD-7EAD-4E00-A608-10E8EDE80B10}</ProjectGuid>
+    <ProjectGuid>{C216E5F1-B118-467D-A5E7-D504469FDFF9}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{c9e5eea5-ca05-42a1-839b-61506e0a37df}</TemplateGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>ReserveClassroom.Droid</RootNamespace>
-    <AssemblyName>ReserveClassroom.Android</AssemblyName>
+    <RootNamespace>DataBindingPractice.Droid</RootNamespace>
+    <AssemblyName>DataBindingPractice.Android</AssemblyName>
     <Deterministic>True</Deterministic>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
@@ -55,9 +55,6 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
-    <PackageReference Include="Xamarin.Forms.Visual.Material">
-      <Version>5.0.0.2125</Version>
-    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -89,9 +86,9 @@
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ReserveClassroom\ReserveClassroom.csproj">
-      <Project>{BE098A17-99EE-43CE-8034-BDADAC066D29}</Project>
-      <Name>ReserveClassroom</Name>
+    <ProjectReference Include="..\DataBindingPractice\DataBindingPractice.csproj">
+      <Project>{6FB5BCF0-E826-4D4A-A584-C2E083CBEF6E}</Project>
+      <Name>DataBindingPractice</Name>
     </ProjectReference>
   </ItemGroup>
  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

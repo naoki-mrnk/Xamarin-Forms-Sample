@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace ReserveClassroom.iOS
+namespace DataBindingPractice.iOS
 {
     public class Application
     {

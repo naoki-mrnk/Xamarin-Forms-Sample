@@ -2,7 +2,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace ReserveClassroom
+namespace DataBindingPractice
 {
     public partial class App : Application
     {
