@@ -14,7 +14,6 @@
         <Label Text="20CM0135 村本直紀" />
         <Label Text="日付" Margin="0, 16, 0, 0"/>
         <DatePicker x:Name="dateText"
-                    DateSelected="dateText_DateSelected"
                     Format="yyyy/MM/dd"
                     Date="2021/01/01" />
         <Label Text="時間"  Margin="0, 8, 0, 0"/>
