@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ReserveClassroom.MainPage"
+             Visual="Material">
+
+    <NavigationPage.TitleView>
+        <Label Text="Reserve class"
+               HorizontalTextAlignment="Center"
+               FontSize="20" />
+    </NavigationPage.TitleView>
+
+    <StackLayout  Margin="20, 20, 20, 20">
+        <Label Text="20CM0135 村本直紀" />
+        <Label Text="日付" Margin="0, 16, 0, 0"/>
+        <DatePicker x:Name="dateText"
+                    DateSelected="dateText_DateSelected"
+                    Format="yyyy/MM/dd"
+                    Date="2021/01/01" />
+        <Label Text="時間"  Margin="0, 8, 0, 0"/>
+        <TimePicker x:Name="timeText"
+                    Format="HH:mm" />
+
+        <Label Text="教室" Margin="0, 8, 0, 0"/>
+        <Picker x:Name="roomName">
+            <Picker.Items>
+                <x:String>781</x:String>
+                <x:String>782</x:String>
+                <x:String>783</x:String>
+            </Picker.Items>
+            <Picker.SelectedIndex>0</Picker.SelectedIndex>
+        </Picker>
+        <Button x:Name="reserveButton"
+                Text="予約する"
+                Clicked="reserveButton_Clicked"
+                Margin="24"/>
+    </StackLayout>
+
+</ContentPage>

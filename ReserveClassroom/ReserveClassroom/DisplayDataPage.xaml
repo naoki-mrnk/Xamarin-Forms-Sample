@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ReserveClassroom.DisplayDataPage">
+
+    <NavigationPage.TitleView>
+        <Label Text="Reserve result"
+               HorizontalTextAlignment="Center"
+               FontSize="20" />
+    </NavigationPage.TitleView>
+
+    <StackLayout  Margin="20, 20, 20, 20">
+        <Label FontSize="20"
+                   Text="以下内容で予約完了しました。ご確認ください。"
+                   HorizontalOptions="Center"
+                   Margin="24"/>
+        <StackLayout Orientation="Horizontal"
+                        Margin="20, 15, 0, 0" >
+            <Label Text="日付：" FontSize="16"/>
+            <Label x:Name="dateLabel"
+                   FontSize="16"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal"
+                        Margin="20, 15, 0, 0" >
+            <Label Text="時間：" FontSize="16"/>
+            <Label x:Name="timeLabel"
+                   FontSize="16"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal"
+                        Margin="20, 15, 0, 0" >
+            <Label Text="教室：" FontSize="16"/>
+            <Label x:Name="pickerLabel"
+                   FontSize="16"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
